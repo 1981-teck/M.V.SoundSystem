@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SKorganizer Pro - Application Guide</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f4f7f6;
+            color: #333;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #34495e;
+            margin-top: 25px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        h3 {
+            color: #2980b9;
+            margin-top: 20px;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+        ul ul {
+            list-style-type: circle;
+            margin-left: 20px;
+        }
+        p {
+            margin-bottom: 10px;
+        }
+        .feature-box {
+            background-color: #ecf0f1;
+            border-left: 5px solid #3498db;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 4px;
+        }
+        .note {
+            background-color: #fcf8e3;
+            border-left: 5px solid #f39c12;
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 4px;
+            color: #8a6d3b;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: #7f8c8d;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>SKorganizer Pro v1.0: Your Solution for an Organized Computer</h1>
+        <p>SKorganizer Pro is a powerful and intuitive application designed to help you keep your folders consistently organized. Forget clutter and let SKorganizer Pro automate the process of classifying and moving your files, freeing up space and enhancing your productivity.</p>
+
+        <h2>Main Features</h2>
+
+        <div class="feature-box">
+            <h3>Intelligent File Organization</h3>
+            <p>SKorganizer Pro offers various organization modes to suit your needs:</p>
+            <ul>
+                <li><strong>By Extension:</strong> Automatically classifies files into predefined categories such as Images, Documents, Music, Videos, Archives, Executables, and many others, based on their extension. You can rely on a comprehensive list of supported file types.</li>
+                <li><strong>By Name Pattern:</strong> Define your custom rules using regular expressions to organize files based on specific words or patterns present in their names.</li>
+                <li><strong>By Size:</strong> Create rules to move files to dedicated folders based on their size (e.g., small files, large files).</li>
+                <li><strong>By Date:</strong> Organize your files into folders based on their modification date, choosing between automatic (YYYY-MM-DD) or custom formats.</li>
+                <li><strong>Custom Rules:</strong> Manually map specific file extensions to custom destination folders, giving you complete control over organization.</li>
+            </ul>
+            <p>Files that do not match any defined rule are automatically moved to an "Other Files" folder to keep everything tidy.</p>
+        </div>
+
+        <div class="feature-box">
+            <h3>Automatic Folder Monitoring</h3>
+            <p>Enable monitoring for your most used folders (like the Downloads folder). SKorganizer Pro will automatically detect new files or changes and organize them in real-time, without you having to do anything.</p>
+        </div>
+
+        <div class="feature-box">
+            <h3>Advanced Duplicate Management</h3>
+            <p>The application identifies and manages duplicate files to avoid wasting space. You can choose your preferred conflict resolution strategy:</p>
+            <ul>
+                <li><strong>Rename:</strong> Adds a suffix to the duplicate file to preserve it.</li>
+                <li><strong>Overwrite:</strong> Replaces the existing file with the new one.</li>
+                <li><strong>Ask:</strong> Allows you to decide on a case-by-case basis.</li>
+                <li><strong>Skip:</strong> Does not move the duplicate file.</li>
+            </ul>
+            <p>Advanced hashing algorithms (MD5, SHA1, SHA256, BLAKE2B) are used to ensure accurate duplicate identification.</p>
+        </div>
+
+        <div class="feature-box">
+            <h3>Operation History and Undo Function</h3>
+            <p>Every move operation is recorded, allowing you to view activity history. You have the option to undo one or more recent operations, either the last one or selected ones, and restore files to their original location or a designated recovery folder. History size is configurable to optimize memory usage.</p>
+        </div>
+
+        <div class="feature-box">
+            <h3>Global Settings and Customization</h3>
+            <p>SKorganizer Pro is highly customizable through a comprehensive settings panel:</p>
+            <ul>
+                <li><strong>Logging Level:</strong> Control the amount of information logged by the application.</li>
+                <li><strong>Recycle Bin Management:</strong> Decide whether deleted files should go to the recycle bin or be permanently removed.</li>
+                <li><strong>Maximum History Size:</strong> Set limits on the number of operations and the total size in MB of the history.</li>
+                <li><strong>Hash Calculation:</strong> Configure the maximum file size for hash calculation and the timeout.</li>
+                <li><strong>Custom Date Format:</strong> Define your own date formats for organization.</li>
+                <li><strong>Application Theme:</strong> Choose your preferred graphical theme (System Default, Light, Dark, Blue, Green, Purple).</li>
+            </ul>
+        </div>
+
+        <div class="feature-box">
+            <h3>Intuitive User Interface (GUI)</h3>
+            <p>The application features a user-friendly graphical interface based on PyQt5, making it simple to configure folders, manage rules, and monitor operation status.</p>
+        </div>
+
+        <div class="note">
+            <strong>Note on Performance:</strong> SKorganizer Pro has been designed with an emphasis on efficiency and memory optimization, utilizing advanced techniques such as LRU cache and optimized data structures to ensure a fluid experience even with a large volume of files. Please make configuration changes only if you are confident, and if necessary, test them on specially created folders. Please read the Instructions and EULA files.
+        </div>
+
+        <div class="footer">
+            <p>Developed by M.V.SoundSystem. Copyright © 2025 M.V.SoundSystem. All rights reserved.</p>
+            <p>mvsoundsystem81@gmail.com</p>
+            <p>Visit the YouTube channel: <a href="https://www.youtube.com/@M.V.SoundSystem" target="_blank">M.V.SoundSystem</a></p>
+        </div>
+    </div>
+</body>
+</html>

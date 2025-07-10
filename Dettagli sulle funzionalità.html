@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SKorganizer Pro - Guida all'Applicazione</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f4f7f6;
+            color: #333;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #34495e;
+            margin-top: 25px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        h3 {
+            color: #2980b9;
+            margin-top: 20px;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+        ul ul {
+            list-style-type: circle;
+            margin-left: 20px;
+        }
+        p {
+            margin-bottom: 10px;
+        }
+        .feature-box {
+            background-color: #ecf0f1;
+            border-left: 5px solid #3498db;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 4px;
+        }
+        .note {
+            background-color: #fcf8e3;
+            border-left: 5px solid #f39c12;
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 4px;
+            color: #8a6d3b;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: #7f8c8d;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>SKorganizer Pro v1.0: La Tua Soluzione per un Computer Ordinato</h1>
+        <p>SKorganizer Pro è un'applicazione potente e intuitiva progettata per aiutarti a mantenere le tue cartelle sempre organizzate. Dimentica il disordine e lascia che SKorganizer Pro automatizzi il processo di classificazione e spostamento dei tuoi file, liberando spazio e migliorando la tua produttività.</p>
+
+        <h2>Caratteristiche Principali</h2>
+
+        <div class="feature-box">
+            <h3>Organizzazione Intelligente dei File</h3>
+            <p>SKorganizer Pro offre diverse modalità di organizzazione per adattarsi alle tue esigenze:</p>
+            <ul>
+                <li><strong>Per Estensione:</strong> Classifica automaticamente i file in categorie predefinite come Immagini, Documenti, Musica, Video, Archivi, Eseguibili e molte altre, basandosi sulla loro estensione. Puoi contare su un elenco completo di tipi di file supportati.</li>
+                <li><strong>Per Pattern di Nome:</strong> Definisci le tue regole personalizzate utilizzando espressioni regolari per organizzare i file in base a specifiche parole o schemi presenti nel loro nome.</li>
+                <li><strong>Per Dimensione:</strong> Crea regole per spostare i file in cartelle dedicate in base alla loro dimensione (es. file piccoli, file grandi).</li>
+                <li><strong>Per Data:</strong> Organizza i tuoi file in cartelle basate sulla loro data di modifica, scegliendo tra formati automatici (AAAA-MM-GG) o personalizzati.</li>
+                <li><strong>Regole Personalizzate:</strong> Mappa estensioni di file specifiche a cartelle di destinazione personalizzate, dandoti il controllo completo sull'organizzazione.</li>
+            </ul>
+            <p>I file che non corrispondono a nessuna regola definita vengono automaticamente spostati in una cartella per "Altri File" per mantenere tutto in ordine.</p>
+        </div>
+
+        <div class="feature-box">
+            <h3>Monitoraggio Automatico delle Cartelle</h3>
+            <p>Attiva il monitoraggio per le tue cartelle più usate (come la cartella Download). SKorganizer Pro rileverà automaticamente nuovi file o modifiche e li organizzerà in tempo reale, senza che tu debba fare nulla.</p>
+        </div>
+
+        <div class="feature-box">
+            <h3>Gestione Avanzata dei Duplicati</h3>
+            <p>L'applicazione identifica e gestisce i file duplicati per evitare sprechi di spazio. Puoi scegliere la strategia di risoluzione dei conflitti preferita:</p>
+            <ul>
+                <li><strong>Rinomina:</strong> Aggiunge un suffisso al file duplicato per conservarlo.</li>
+                <li><strong>Sovrascrivi:</strong> Sostituisce il file esistente con il nuovo.</li>
+                <li><strong>Chiedi:</strong> Ti permette di decidere caso per caso.</li>
+                <li><strong>Salta:</strong> Non sposta il file duplicato.</li>
+            </ul>
+            <p>Vengono utilizzati algoritmi di hashing avanzati (MD5, SHA1, SHA256, BLAKE2B) per garantire un'identificazione accurata dei duplicati.</p>
+        </div>
+
+        <div class="feature-box">
+            <h3>Storico Operazioni e Funzione Annulla</h3>
+            <p>Ogni operazione di spostamento viene registrata, permettendoti di visualizzare lo storico delle attività. Hai la possibilità di annullare una o più operazioni recenti, sia l'ultima che quelle selezionate, e di ripristinare i file nella loro posizione originale o in una cartella di recupero designata. La dimensione dello storico è configurabile per ottimizzare l'uso della memoria.</p>
+        </div>
+
+        <div class="feature-box">
+            <h3>Impostazioni Globali e Personalizzazione</h3>
+            <p>SKorganizer Pro è altamente personalizzabile tramite un pannello di impostazioni completo:</p>
+            <ul>
+                <li><strong>Livello di Logging:</strong> Controlla la quantità di informazioni registrate dall'applicazione.</li>
+                <li><strong>Gestione Cestino:</strong> Decidi se i file eliminati devono andare nel cestino o essere rimossi permanentemente.</li>
+                <li><strong>Dimensione Massima Storico:</strong> Imposta limiti al numero di operazioni e alla dimensione totale in MB dello storico.</li>
+                <li><strong>Calcolo Hash:</strong> Configura la dimensione massima dei file per il calcolo dell'hash e il timeout.</li>
+                <li><strong>Formato Data Personalizzato:</strong> Definisci i tuoi formati data per l'organizzazione.</li>
+                <li><strong>Tema dell'Applicazione:</strong> Scegli il tema grafico che preferisci (Predefinito di Sistema, Chiaro, Scuro, Blu, Verde, Viola).</li>
+            </ul>
+        </div>
+
+        <div class="feature-box">
+            <h3>Interfaccia Utente Intuitiva (GUI)</h3>
+            <p>L'applicazione dispone di un'interfaccia grafica user-friendly basata su PyQt5, che rende semplice configurare le cartelle, gestire le regole e monitorare lo stato delle operazioni.</p>
+        </div>
+
+        <div class="note">
+            <strong>Nota sulle Prestazioni:</strong> SKorganizer Pro è stato progettato con attenzione all'efficienza e all'ottimizzazione della memoria, utilizzando tecniche avanzate come cache LRU e strutture dati ottimizzate per garantire un'esperienza fluida anche con un grande volume di file, si prega di apportare modifiche alla configurazione solo se sicuri, eventualmente, effettuare test su cartelle create specificamente. Si prega di leggere i file Istruzioni e EULA.
+        </div>
+
+        <div class="footer">
+            <p>Sviluppato da M.V.SoundSystem. Copyright © 2025 M.V.SoundSystem. Tutti i diritti riservati.</p>
+            <p>mvsoundsystem81@gmail.com</p>
+            <p>Visita il canale YouTube: <a href="https://www.youtube.com/@M.V.SoundSystem" target="_blank">M.V.SoundSystem</a></p>
+        </div>
+    </div>
+</body>
+</html>

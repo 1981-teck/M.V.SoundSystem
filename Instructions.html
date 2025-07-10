@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SKorganizer Pro - User Guide</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f4f7f6;
+            color: #333;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #34495e;
+            margin-top: 25px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        h3 {
+            color: #2980b9;
+            margin-top: 20px;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+        ol {
+            margin-left: 20px;
+        }
+        ul ul, ol ul {
+            list-style-type: circle;
+            margin-left: 20px;
+        }
+        p {
+            margin-bottom: 10px;
+        }
+        .section-box {
+            background-color: #ecf0f1;
+            border-left: 5px solid #3498db;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 4px;
+        }
+        .tip-box {
+            background-color: #e8f5e9;
+            border-left: 5px solid #4CAF50;
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 4px;
+            color: #2e7d32;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: #7f8c8d;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        code {
+            background-color: #f0f0f0;
+            padding: 2px 4px;
+            border-radius: 3px;
+            font-family: 'Consolas', 'Monaco', monospace;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>SKorganizer Pro - Detailed User Guide</h1>
+        <p>Welcome to the <strong>SKorganizer Pro</strong> user guide! This document will walk you through all of the application's features, helping you set up and make the most of its file organization capabilities. It's recommended to launch <strong>SkOrganizer Pro</strong> in <strong>administrator mode</strong> to avoid file permission issues.</p>
+        <p><strong>Required Specifications:</strong></p>
+        <p><strong>Operating System:</strong> Windows 10, macOS (Darwin), Linux.</p>
+        <p><strong>Hardware:</strong>
+        <p>Minimum: A modern dual-core processor (e.g., Intel Core i3 or AMD Ryzen 3).</p>
+        <p>Recommended: A quad-core processor or higher (Intel Core i5/i7 or AMD Ryzen 5/7) for optimal performance, especially when organizing a large number of files.</p>
+        <p><strong>Memory (RAM):</strong></p>
+        <p>Minimum: 4 GB RAM.</p>
+        <p>Recommended: 8 GB RAM or more to ensure smooth operation, especially if you are using other applications simultaneously or managing large amounts of data.</p>
+        <p><strong>Storage Space:</strong> Hard Drive (HDD/SSD): Little space required for the program installation itself (a few MB). However, you need sufficient hard drive space for the files the program will organize. Using a Solid State Drive (SSD) is strongly recommended to improve overall file operation speed.</p>
+        <p><strong>Display:</strong> Minimum resolution: 1024x768 pixels.</p>
+
+        <h2>1. Getting Started</h2>
+        <p>Upon first launch, you'll see the application's main interface, divided into several tabs for easy navigation and configuration.</p>
+        <div class="section-box">
+            <h3>Navigating the Interface</h3>
+            <p>The user interface is based on main Menus, which will include:</p>
+            <ul>
+                <li><strong>File-Manage Folders:</strong> To add, configure, and manage the drives or folders to be organized.</li>
+                <li><strong>File-Global Settings:</strong> To define how your files should be classified and moved, and to change the application's theme and behavior.</li>
+                <li><strong>Edit:</strong> To view past operations and undo them.</li>
+                <li><strong>Help:</strong> To view a summary of features.</li>
+            </ul>
+            <div class="tip-box">
+                <strong>Warning:</strong> Do not select the main drive (e.g., C:), as this would compromise the operating system's functionality if the <strong>"RECURSIVE"</strong> sorting system is used.
+                <strong>IMPORTANT:</strong> Check that the files to be organized do not have the "block" for files coming from another computer. If you are sure of their origin: right-click on the file, properties - uncheck the block. SkOrganizer Pro cannot process blocked files; this is to protect your computer.
+            </div>
+        </div>
+
+        <h2>2. Folder Configuration</h2>
+        <p>This is the first step to start organizing. You need to tell SKorganizer Pro which folders you want to manage.</p>
+        <div class="section-box">
+            <h3>Adding and Removing Folders</h3>
+            <ol>
+                <li>In the <strong>Manage Folders</strong> tab, use the "Add" button.</li>
+                <li>Select the source folder you wish to organize or monitor.</li>
+                <li>For each added folder, you can specify if it will be designated for **Downloads (specific behavior) or General**, where files will be organized.</li>
+                <li>Use the "Settings" button to choose various settings for that folder, for example: Folder Type - Organization Type (extension, date, alphabetical, etc).</li>
+                <li>Use the "Remove Folder" button to delete an existing configuration.</li>
+            </ol>
+            <div class="tip-box">
+                <strong>Tip:</strong> Start with a "Downloads" folder or a test folder to familiarize yourself with the process before applying it to more important directories. Backups are recommended for large recursive operations on new folders or drives with existing files (and subfolders).
+            </div>
+        </div>
+
+        <h2>3. Defining Organization Rules</h2>
+        <p>Rules determine how SKorganizer Pro will classify and move your files.</p>
+        <div class="section-box">
+            <h3>Available Rule Types:</h3>
+            <ul>
+                <li><strong>Organization by Extension (Default):</strong>
+                    <p>This is the simplest mode. SKorganizer Pro has a predefined list of categories (e.g., Images, Documents, Videos) and associated file extensions. Files will be moved to the appropriate destination folder based on their extension.</p>
+                    <p><em>Example:</em> A <code>.jpg</code> file will go into the "Images" folder.</p>
+                </li>
+                <li><strong>Alphabetical Organization:</strong>
+                    <p>Organizes files based on their initial letter by creating folders for each different initial present.</p>
+                    <p><em>Example:</em> Files Anna.txt Alberto.jpg will be moved to a folder "A".</p>
+                </li>
+                <li><strong>Organization by Date:</strong>
+                    <p>Organizes files based on their oldest date (creation/modification). You can choose an automatic date format (<code>YYYY-MM-DD</code>) or define a custom one.</p>
+                    <p><em>Example:</em> Files created/modified on March 15, 2025, will go into a folder "2025-03-15".</p>
+                </li>
+                <li><strong>Organization by Size:</strong>
+                    <p>Define size ranges (e.g., Less than 1MB, Between 1MB and 10MB, Greater than 100MB) and assign a destination folder for each range.</p>
+                    <p><em>Example:</em> Large files (e.g., > 1GB) can be moved to an "Large Archives" folder.</p>
+                </li>
+                <li><strong>Organization by Name Pattern:</strong>
+                    <p>Allows you to define regular expressions (regex) to match file names. Files that match the pattern will be moved to a specified folder.</p>
+                    <p><em>Example:</em> If you create a pattern for <code>report_.*\.pdf</code>, all PDFs with names starting with "report_" will go into an "Annual Reports" folder.</p>
+                    <div class="tip-box">
+                        <strong>Tip:</strong> Regular expressions are powerful. If you are unfamiliar, search for online guides or start with simple patterns like <code>.*project_name.*</code>.
+                    </div>
+                </li>
+                <li><strong>Custom Rules:</strong>
+                    <p>Manually map specific file extensions to custom destination folders, regardless of predefined categories.</p>
+                    <p><em>Example:</em> You can decide that all <code>.log</code> files go into the "System Logs" folder.</p>
+                </li>
+                <li><strong>"Other Files" Folder (extension) "#" (alphabetical):</strong>
+                    <p>Files that do not match any of the defined rules will be moved to a designated folder for "Other Files" or "#" (configurable in settings).</p>
+                </li>
+            </ul>
+        </div>
+
+        <h2>4. Executing Organization</h2>
+        <p>Once you've configured your folders and rules, you're ready to start the organization process.</p>
+        <div class="section-box">
+            <h3>Manual Start</h3>
+            <p>In the main window, select a folder with a <strong>right-click</strong>, then select "organize now". If you want to organize all folders in the list, select <strong>"organize all now"</strong>. By clicking this, SKorganizer Pro will start scanning and moving files in the main folder (for subfolders, select reorganize recursively) according to your rules.</p>
+            <h3>Automatic Monitoring</h3>
+            <p>If you have enabled monitoring for a folder (<strong>right-click</strong>) or for all folders in the main window (<strong>Start All Monitoring</strong>), organization will occur automatically in the background whenever a new file is added or modified in that folder.</p>
+            <h3>Status and Notifications</h3>
+            <p>The application will provide updates on the organization status in the log window, showing moved files and completed folders. For long operations, a progress bar will appear.</p>
+        </div>
+
+        <h2>5. Duplicate File Management</h2>
+        <p>SKorganizer Pro can detect duplicate files (same name) and identical files (same content) using hashing algorithms to ensure accuracy.</p>
+        <div class="section-box">
+            <h3>Conflict Resolution</h3>
+            <p>When a duplicate is detected, the application will act according to your <strong>Conflict Resolution Policy</strong>, configurable in the global settings:</p>
+            <ul>
+                <li><strong>Rename: (default)</strong> The duplicate file will be renamed (e.g., <code>document_copy_1.pdf</code>) and moved.</li>
+                <li><strong>Overwrite:</strong> The existing file at the destination will be replaced with the new file. <strong>(Use with caution!)</strong></li>
+                <li><strong>Ask:</strong> The application will ask you how to proceed for each duplicate detected. (Not recommended for large file collections)</li>
+                <li><strong>Skip:</strong> The duplicate file will not be moved and will remain in the source folder.</li>
+            </ul>
+            <div class="tip-box">
+                <strong>Warning:</strong> The application uses cryptographic hashing algorithms (like MD5, SHA1, SHA256, BLAKE2B) to generate a unique digital fingerprint for the content of each file. If two files have the same hash, SKorganizer Pro considers them <strong>IDENTICAL</strong> in their content, regardless of name or location, and moves them to the recycle bin. If they are merely <strong>DUPLICATES</strong>, it will act according to the selected option (it is recommended to keep "default").
+            </div>
+        </div>
+
+        <h2>6. Using History and Undo Function</h2>
+        <p>SKorganizer Pro tracks all move operations, offering you the ability to undo them.</p>
+        <div class="section-box">
+            <h3>Viewing History</h3>
+            <p>In the <strong>Application Log</strong> tab, you can see a list of all organization operations performed, including moved files and their original locations.</p>
+            <h3>Undoing Operations</h3>
+            <p>In the Edit Menu, you can select: Undo Last Move or Undo Operations to restore files to their original positions. The application uses the "System Recycle Bin" for file deletion.</p>
+            <h3>Recovery Folder</h3>
+            <p>The program has a recovery folder where it saves files in case of errors or problems with moving and undoing operations. This is located in the system's main drive, users/"username"/Recovery.</p>
+            <div class="tip-box">
+                <strong>Tip:</strong> Set a reasonable limit for the history size in global settings to avoid excessive memory consumption (only modify this setting if you are an expert, otherwise leave the "default" setting).
+                <strong>Warning:</strong> If the system recycle bin has the "Don't move files to the Recycle Bin. Remove files immediately" option active, this will also affect the program. It is recommended to disable it.
+            </div>
+        </div>
+
+        <h2>7. Global Settings</h2>
+        <p>The File <strong>Global Settings</strong> menu allows you to customize the general behavior of SKorganizer Pro.</p>
+        <div class="section-box">
+            <ul>
+                <li><strong>GENERAL:</strong>
+                <li><strong>Logging Level:</strong> Choose the level of detail for application logs (useful for troubleshooting).</li>
+                <li><strong>Theme:</strong> Select your preferred application color.</li>
+                <li><strong>Max Worker Threads:</strong> Defines the maximum number of operations that can be performed simultaneously.</li>
+                <li><strong>Max file size for hash:</strong> Defines the maximum size of a file (in MB or GB) for which the application will calculate a hash value to determine if files are identical.</li>
+                <li><strong>Hash timeout:</strong> Defines the maximum time (in seconds) the application will wait to complete the hash calculation of a single file.</li>
+                <li><strong>Exclusion Suffix:</strong> Indicates the suffix files must have to be ignored by monitoring.</li>
+                <li><strong>'Other Files' Folder:</strong> Indicates the folder where unrecognized files will be moved.</li>
+                <li><strong>Temporary Extensions:</strong> Allows you to tell SKorganizer Pro which file types to consider "temporary" or unimportant for main organization, enabling it to manage them appropriately (usually by ignoring or deleting them) to maintain order.</li>
+                <li><strong>Use Recycle Bin:</strong> Decide whether files moved or deleted by SKorganizer Pro should go to the system recycle bin or be permanently removed.</li>
+                <li><strong>History Size:</strong> Set the maximum number of operations to keep in history and/or the maximum size in MB.</li>
+                <li><strong>Custom Date Format:</strong> If you've chosen organization by date, you can define a specific date format here.</li>
+                <li><strong>CLEANUP:</strong>
+                <li><strong>Max File Size for Cleanup:</strong> Indicates the maximum size of files considered by the <strong>Automatic Cleanup</strong> function (right-click on the folder in the main window).</li>
+                <li><strong>Recycle Bin Path:</strong> Select a custom path.</li>
+                <li><strong>Use recycle bin for deletions:</strong> Deselecting is not recommended; if deselected, it will not use the recycle bin.</li>
+                <li><strong>BEHAVIOR:</strong>
+                <li><strong>Max Undoable Operations:</strong> Customize how many undoable operations are stored (default 500, calculated for an optimal security-size ratio).</li>
+                <li><strong>Max history size:</strong> Customize how much maximum space the history can use.</li>
+                <li><strong>Conflict Resolution:</strong> Select what the application should do when it finds duplicate files.</li>
+                <li><strong>Deduplicate files:</strong> Selecting "Deduplicate files" enables an important control mechanism that helps you maintain data integrity and optimize disk space, while deselecting it disables this control, allowing files to be moved without content duplicate checks.</li>
+                <li><strong>Hash Algorithm:</strong> Select a custom algorithm to verify duplicate files.</li>
+            </ul>
+        </div>
+
+        <h2>8. Troubleshooting and Useful Tips</h2>
+        <div class="section-box">
+            <ul>
+                <li><strong>Excluded Files:</strong> Files with a specific suffix (e.g., <code>.skorganizer_ignore</code>) can be automatically excluded from organization. Check settings for this option.</li>
+                <li><strong>Error Policies:</strong> SKorganizer Pro has internal policies for handling file move errors (e.g., retry or move to a quarantine folder). This helps prevent data loss.</li>
+                <li><strong>SkOrganizer</strong> was designed to manage files, errors, and all processes with sophisticated systems, preventing errors, using the system recycle bin for simplicity, and employing effective recovery and undo systems. Therefore, it is recommended not to modify the program's <strong>options</strong> unless you fully understand the mechanics of such modifications, or at least to make such modifications and test them on folders created specifically to avoid potential blockages or data loss.</li>
+                <li><strong>Final recommendations:</strong> Please read the Features Details file and EULA.</li>
+            </ul>
+        </div>
+        <h2>9. RECURSIVE Function</h2>
+        <div class="section-box">
+            <ul>
+                <li>The <strong>Recursive</strong> function is used to perform organization on existing folders, including <strong>Subfolders</strong>, or if you decide to <strong>change</strong> the organization method. In this case, a confirmation window will appear for the user. Please make any necessary backups of important files/folders before performing this action. The program may need "time" to execute operations on "very large" quantities of files or on less powerful computers. Incorrect interactions, blackouts, etc., could cause data loss <strong>WITHOUT</strong> possibility of recovery. <strong>ALL</strong> files deleted by this function will be in the <strong>"system recycle bin"</strong> to offer an additional security system.</li>
+            </ul>
+        </div>
+
+        <div class="footer">
+            <p><strong>Thank you for choosing SKorganizer Pro!</strong></p>
+            <p><strong>Developed by M.V.SoundSystem. Copyright © 2025.</strong></p>
+            <p><strong>mvsoundsystem81@gmail.com</strong></p>
+            <p><strong>YouTube channel: <a href="https://www.youtube.com/@M.V.SoundSystem" target="_blank">M.V.SoundSystem</strong></a></p>
+        </div>
+    </div>
+</body>
+</html>

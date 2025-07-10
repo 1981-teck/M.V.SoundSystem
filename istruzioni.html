@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SKorganizer Pro - Guida all'Utilizzo</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f4f7f6;
+            color: #333;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #34495e;
+            margin-top: 25px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        h3 {
+            color: #2980b9;
+            margin-top: 20px;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+        ol {
+            margin-left: 20px;
+        }
+        ul ul, ol ul {
+            list-style-type: circle;
+            margin-left: 20px;
+        }
+        p {
+            margin-bottom: 10px;
+        }
+        .section-box {
+            background-color: #ecf0f1;
+            border-left: 5px solid #3498db;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 4px;
+        }
+        .tip-box {
+            background-color: #e8f5e9;
+            border-left: 5px solid #4CAF50;
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 4px;
+            color: #2e7d32;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: #7f8c8d;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        code {
+            background-color: #f0f0f0;
+            padding: 2px 4px;
+            border-radius: 3px;
+            font-family: 'Consolas', 'Monaco', monospace;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>SKorganizer Pro - Guida Dettagliata all'Utilizzo</h1>
+        <p>Benvenuto nella guida utente di <strong>SKorganizer Pro!</strong> Questo documento ti accompagnerà attraverso tutte le funzionalità dell'applicazione, aiutandoti a configurare e utilizzare al meglio le sue capacità di organizzazione dei file. Si consiglia di avviare <strong>SkOrganizer Pro</strong> in modalità <strong>amministratore</strong> per evitare problemi di permessi sui file.</p>
+        <p><strong>Requisiti richiesti:</strong></p>
+        <p><strong>Sistema operativo:</strong> Windows 10, macOs (Darwin), Linux.</p>
+        <p><strong>Hardware:</strong> 
+        <p>Minimo: Un processore dual-core moderno (ad esempio, Intel Core i3 o AMD Ryzen 3).
+        <p>Consigliato: Un processore quad-core o superiore (Intel Core i5/i7 o AMD Ryzen 5/7) per prestazioni ottimali, specialmente durante l'organizzazione di un gran numero di file..
+<p><strong>Memoria (RAM):</strong> 
+
+        <p>Minimo: 4 GB di RAM.
+
+        <p>Consigliato: 8 GB di RAM o più per garantire un funzionamento fluido, soprattutto se si utilizzano contemporaneamente altre applicazioni o si gestiscono grandi quantità di dati.
+
+        <p><strong>Spazio di Archiviazione:</strong> Disco Rigido (HDD/SSD): Poco spazio richiesto per l'installazione del programma stesso (pochi MB). Tuttavia, è necessario spazio sufficiente sul disco rigido per i file che il programma dovrà organizzare. L'utilizzo di un'unità a stato solido (SSD) è fortemente consigliato per migliorare la velocità complessiva delle operazioni sui file.
+
+        <p><strong>Display:</strong> Risoluzione minima: 1024x768 pixel.</p>
+
+        <h2>1. Iniziare</h2>
+        <p>Al primo avvio, ti troverai di fronte all'interfaccia principale dell'applicazione, divisa in diverse schede per facilitare la navigazione e la configurazione.</p>
+        <div class="section-box">
+            <h3>Navigazione nell'Interfaccia</h3>
+            <p>L'interfaccia utente è basata su Menù principali, che includeranno:</p>
+            <ul>
+                <li><strong>File-Gestisci Cartelle:</strong> Per aggiungere, configurare e gestire le unità o cartelle da organizzare.</li>
+                <li><strong>File-Impostazioni globali:</strong> Per definire come i tuoi file devono essere classificati e spostati, cambiare il tema e i comportamenti dell'applicazione</li>
+                <li><strong>Modifica:</strong> Per visualizzare le operazioni passate e annullarle.</li>
+                <li><strong>Aiuto:</strong> Per visualizzare un riassunto delle funzionalità.</li>
+
+            <div class="tip-box">
+                <strong>Attenzione:</strong> Non selezionare l'unità principale (es c:), comprometterebbe le funzionalità del sistema operativo se viene utilizzato il sistema <strong>"RICORSIVO"</strong> di ordinamento.
+<strong>IMPORTANTE:</strong> controllare che i file da organizzare non abbiano il "blocco" per file che provengono da un'altro computer, se sicuri della loro provenienza: tasto destro sul file, proprietà - togliere la spunta dal blocco, SkOrganizer Pro non può processare file con blocco di sicurezza, questo per proteggere il vostro computer.
+            </div>
+        </div>
+
+        <h2>2. Configurazione delle Cartelle</h2>
+        <p>Questa è la prima fase per iniziare a organizzare. Devi indicare a SKorganizer Pro quali cartelle vuoi gestire.</p>
+        <div class="section-box">
+            <h3>Aggiungere e Rimuovere Cartelle</h3>
+            <ol>
+                <li>Nella scheda <strong>Gestisci Cartelle</strong>, usa il pulsante "Aggiungi".</li>
+                <li>Seleziona la cartella di origine che desideri organizzare o monitorare.</li>
+                <li>Per ogni cartella aggiunta, potrai specificare se sarà destinata a <strong>Download (comportamento specifico) o Generale</strong>, dove i file verranno organizzati.</li>
+                <li>Usa il pulsante "Impostazioni" per scegliere le varie impostazioni per quella cartella per esempio: Tipo cartella - Tipo di organizzazione (estensione, data, alfabetico, etc).</li>
+            </ol>
+                <li>Usa il pulsante "Rimuovi Cartella" per eliminare una configurazione esistente.</li>
+            </ol>
+
+            <div class="tip-box">
+                <strong>Suggerimento:</strong> Inizia con una cartella "Downloads" o una cartella di prova per familiarizzare con il processo prima di applicarlo a directory più importanti. Consigliati backup su grosse operazioni ricorsive per nuove cartelle o unità con file già esistenti (e sottocartelle).
+            </div>
+        </div>
+
+        <h2>3. Definizione delle Regole di Organizzazione</h2>
+        <p>Le regole determinano come SKorganizer Pro classificherà e sposterà i tuoi file.</p>
+        <div class="section-box">
+            <h3>Tipi di Regole Disponibili:</h3>
+            <ul>
+                <li><strong>Organizzazione per Estensione (Default):</strong>
+                    <p>Questa è la modalità più semplice. SKorganizer Pro ha un elenco predefinito di categorie (es. Immagini, Documenti, Video) e le estensioni di file associate. I file verranno spostati nella cartella di destinazione appropriata basata sulla loro estensione.</p>
+                    <p><em>Esempio:</em> Un file <code>.jpg</code> andrà nella cartella "Immagini".</p>
+                </li>
+                <li><strong>Organizzazione Alfabetico:</strong>
+                    <p>Organizza i file in base alla loro iniziale creando cartelle per ogni iniziale diversa presente.</p>
+                    <p><em>Esempio:</em> I file Anna.txt Alberto.jpg verranno spostati in una cartella "A".</p>
+                </li>
+                <li><strong>Organizzazione per Data:</strong>
+                    <p>Organizza i file in base alla loro data (creazione/modifica) più vecchia. Puoi scegliere un formato di data automatico (<code>AAAA-MM-GG</code>) o definirne uno personalizzato.</p>
+                    <p><em>Esempio:</em> I file creati/modificati il 15 marzo 2025 andranno in una cartella "2025-03-15".</p>
+                </li>
+                <li><strong>Organizzazione per Dimensione:</strong>
+                    <p>Definisci intervalli di dimensione (es. Minore di 1MB, Tra 1MB e 10MB, Maggiore di 100MB) e assegna una cartella di destinazione per ogni intervallo.</p>
+                    <p><em>Esempio:</em> I file di grandi dimensioni (es. > 1GB) possono essere spostati in una cartella "Archivi Grandi".</p>
+                </li>
+                <li><strong>Organizzazione per Pattern di Nome:</strong>
+                    <p>Permette di definire espressioni regolari (regex) per abbinare i nomi dei file. I file che corrispondono al pattern verranno spostati in una cartella specificata.</p>
+                    <p><em>Esempio:</em> Se crei un pattern per <code>rapporto_.*\.pdf</code>, tutti i PDF con nomi che iniziano con "rapporto_" andranno in una cartella "Rapporti annuali".</p>
+                    <div class="tip-box">
+                        <strong>Suggerimento:</strong> Le espressioni regolari sono potenti. Se non hai familiarità, cerca guide online o inizia con pattern semplici come <code>.*nome_progetto.*</code>.
+                    </div>
+                </li>
+                <li><strong>Regole Personalizzate:</strong>
+                    <p>Mappa manualmente specifiche estensioni di file a cartelle di destinazione personalizzate, indipendentemente dalle categorie predefinite.</p>
+                    <p><em>Esempio:</em> Puoi decidere che tutti i file <code>.log</code> vadano nella cartella "Log del sistema".</p>
+                </li>
+                <li><strong>Cartella "Altri File" (estensione) "#" (alfabetico):</strong>
+                    <p>I file che non corrispondono a nessuna delle regole definite verranno spostati in una cartella designata per "Altri File" o "#" (configurabile nelle impostazioni).</p>
+                </li>
+            </ul>
+        </div>
+
+        <h2>4. Esecuzione dell'Organizzazione</h2>
+        <p>Una volta configurate le cartelle e le regole, sei pronto per avviare il processo di organizzazione.</p>
+        <div class="section-box">
+            <h3>Avvio Manuale</h3>
+            <p>Nella finestra principale seleziona una cartella col <strong>tasto destro</strong> poi seleziona "organizza ora", se vuoi organizzare tutte le cartelle nell'elenco seleziona <strong>"organizza tutti ora"</strong>. Cliccando su questo, SKorganizer Pro inizierà a scansionare e spostare i file della cartella principale, (per le sottocartelle selezionare riorganizza ricorsivamente) in base alle tue regole.</p>
+            <h3>Monitoraggio Automatico</h3>
+            <p>Se hai abilitato il monitoraggio per una cartella <strong>tasto destro</strong>, o per utte le cartelle nella finestra principale <strong>Avvia Monitoraggio Tutti</strong> l'organizzazione avverrà automaticamente in background ogni volta che un nuovo file viene aggiunto o modificato in quella cartella.</p>
+            <h3>Stato e Notifiche</h3>
+            <p>L'applicazione fornirà aggiornamenti sullo stato dell'organizzazione nella finestra del log, mostrando i file spostati e le cartelle completate. In operazioni lunghe comparirà una barra di avanzamento.</p>
+                </li>
+            </ul>
+        </div>
+
+        <h2>5. Gestione dei File Duplicati</h2>
+        <p>SKorganizer Pro è in grado di rilevare i file duplicati (stesso nome) e identici (stesso contenuto) utilizzando algoritmi di hashing per garantire accuratezza.</p>
+        <div class="section-box">
+            <h3>Risoluzione dei Conflitti</h3>
+            <p>Quando viene rilevato un duplicato, l'applicazione agirà in base alla tua <strong>Politica di Risoluzione Conflitti</strong>, configurabile nelle impostazioni globali:</p>
+            <ul>
+                <li><strong>Rinomina: (default) </strong> Il file duplicato verrà rinominato (es. <code>documento_copia_1.pdf</code>) e spostato.</li>
+                <li><strong>Sovrascrivi:</strong> Il file esistente nella destinazione verrà sostituito con il nuovo file. <strong>(Usa con cautela!)</strong></li>
+                <li><strong>Chiedi:</strong> L'applicazione ti chiederà come procedere per ogni duplicato rilevato. (non consigliabile su raccolte di file di "grosse dimensioni")</li>
+                <li><strong>Salta:</strong> Il file duplicato non verrà spostato e rimarrà nella cartella di origine.</li>
+            <div class="tip-box">
+                <strong>Attenzione:</strong> L'applicazione utilizza algoritmi di hashing crittografico (come MD5, SHA1, SHA256, BLAKE2B) per generare un'impronta digitale unica per il contenuto di ogni file. Se due file hanno lo stesso hash, SKorganizer Pro li considera <strong>IDENTICI</strong> nel loro contenuto, indipendentemente dal nome o dalla posizione e li sposta nel cestino, se sono invece <strong>DUPLICATI</strong> agirà secondo l'opzione selezionata (si raccomanda mantenere "default").
+            </div>
+        </div>     
+
+        <h2>6. Utilizzo dello Storico e Funzione Annulla</h2>
+        <p>SKorganizer Pro tiene traccia di tutte le operazioni di spostamento, offrendoti la possibilità di annullarle.</p>
+        <div class="section-box">
+            <h3>Visualizzare lo Storico</h3>
+            <p>Nella scheda, <strong>Log Applicazione</strong>, potrai vedere un elenco di tutte le operazioni di organizzazione eseguite, inclusi i file spostati e le loro posizioni originali.</p>
+            <h3>Annullare Operazioni</h3>
+            <p>Nel Menù Modifica, puoi selezionare: Annulla Ultimo Spostamento o Annulla Operazioni per ripristinare i file nelle loro posizioni originali. L'applicazione usa il "Cestino di Sistema" per l'eliminazione dei file.</p>
+            <h3>Cartella Recupero</h3>
+<p>Il programma possiede una cartella di recupero in cui salva i file in caso di errori o problemi di spostamento e annullamento operazione, questa si trova nell'unita principale del sistema, utenti/"nome utente"/Recupero.</p>
+            <div class="tip-box">
+                <strong>Suggerimento:</strong> Imposta un limite ragionevole per la dimensione dello storico nelle impostazioni globali per evitare un consumo eccessivo di memoria (modificare questa impostazione solo se esperti, se no lasciare quella di "default").
+                <strong>Attenzione:</strong> se il cestino di sistema ha l'opzione attiva "non spostare i file nel cestino. Rimuovi i file direttamente", questo influenzerà anche il programma, si consiglia di disattivarla.
+            </div>
+        </div>
+
+        <h2>7. Impostazioni Globali</h2>
+        <p>Il menù File <strong>Impostazioni Globali</strong> ti permette di personalizzare il comportamento generale di SKorganizer Pro.</p>
+        <div class="section-box">
+            <ul>
+                <li><strong>GENERALI:</strong>
+                <li><strong>Livello di Logging:</strong> Scegli il livello di dettaglio dei log dell'applicazione (utile per la risoluzione dei problemi).</li>
+                <li><strong>Tema:</strong> Seleziona il colore dell'applicazione tra quelli che preferisci.</li>
+                <li><strong>Max worker Threads:</strong> Definisce il numero massimo di operazioni che può eseguire contemporaneamente.</li>
+                <li><strong>Max dimensione file per hash:</strong> definisce la dimensione massima di un file (in MB o GB) per cui l'applicazione calcolerà un valore hash per determinare se dei file sono identici.</li>
+                <li><strong>Timeout hash:</strong> definisce il tempo massimo (in secondi) che l'applicazione attenderà per completare il calcolo dell'hash di un singolo file.</li>
+                <li><strong>Suffisso esclusione:</strong> Indica il suffisso che devono avere i file per essere ignorati dal monitoraggio.</li>
+                <li><strong>Cartella 'Altri File':</strong> Indica la cartella in cui verranno spostati i file non riconosciuti.</li>
+                <li><strong>Estensioni Temporanee:</strong> Ti permette di indicare a SKorganizer Pro quali tipi di file considerare "di passaggio" o non importanti per l'organizzazione principale, consentendogli di gestirli in modo appropriato (solitamente ignorandoli o eliminandoli) per mantenere l'ordine..</li>
+                <li><strong>Usa Cestino:</strong> Decidi se i file spostati o eliminati da SKorganizer Pro debbano finire nel cestino del sistema o essere rimossi permanentemente.</li>
+                <li><strong>Dimensioni Storico:</strong> Imposta il numero massimo di operazioni da conservare nello storico e/o la dimensione massima in MB.</li>
+                <li><strong>Formato Data Personalizzato:</strong> Se hai scelto l'organizzazione per data, puoi definire un formato di data specifico qui.</li>
+                <li><strong>PULIZIA:</strong>
+                <li><strong>Dimensione Max File Pulizia:</strong> Indica la dimensione massima dei file presi in considerazione dalla funzione di <strong>Pulizia Automatica</strong> (tasto destro sulla cartella nella finestra principale).</li>
+                <li><strong>Percorso Cestino:</strong> Seleziona percorso personalizzato.</li>
+                <li><strong>Usa cestino per eliminazioni:</strong> Deselezione sconsigliata, nel caso, non utilizza il cestino.</li>
+                <li><strong>COMPORTAMENTO:</strong>
+                <li><strong>Max Operazioni Annullabili:</strong> Personalizza quante operazioni annullabili vengono memorizzate (default 500, calcolato per un ottimo rapporto sicurezza-dimensioni).</li>
+                <li><strong>Max dimensione cronologia:</strong> Personalizza quanto spazio massimo può utilizzare la cronologia.</li>
+                <li><strong>Risoluzione conflitti:</strong> Seleziona cosa deve fare l'applicazione quando trova file duplicati.</li>
+                <li><strong>Deduplica file:</strong> selezionare "Deduplica file" abilita un importante meccanismo di controllo che ti aiuta a mantenere l'integrità dei tuoi dati e a ottimizzare lo spazio su disco, mentre deselezionarla disattiva questo controllo, lasciando che i file vengano spostati senza verifiche sui duplicati di contenuto..</li>
+                <li><strong>Algoritmo hash:</strong> Seleziona algoritmo personalizzato per verificare i file duplicati.</li>
+
+</li>
+                
+            </ul>
+        </div>
+
+        <h2>8. Risoluzione dei Problemi e Consigli Utili</h2>
+        <div class="section-box">
+            <ul>
+                <li><strong>File Esclusi:</strong> I file con un suffisso specifico (es. <code>.skorganizer_ignore</code>) possono essere automaticamente esclusi dall'organizzazione. Controlla le impostazioni per questa opzione.</li>
+                <li><strong>Politiche di Errore:</strong> SKorganizer Pro ha politiche interne per gestire gli errori di spostamento dei file (es. ritentare o spostare in una cartena di quarantena). Questo aiuta a prevenire la perdita di dati.</li>
+                <li><strong>SkOrganizer</strong> è stato creato in modo di gestire i file, gli errori e tutti i processi con sistemi sofisticati prevenendo errori, usando il cestino di sistema per semplicità e usando sistemi di recupero e annullamento efficaci, a tal proposito si consiglia di non modificare le <strong>opzioni</strong> del programma se non si capiscono a fondo le meccaniche di tali modifiche o comunque di fare tali modifiche e testarle su cartelle create appositamente per evitare eventuali blocchi o perdite di dati.</li>
+                <li><strong>Ultime raccomandazioni:</strong> si prega di leggere il file Dettagli sulle funzionalità e EULA. </li>
+            </ul>
+        </div>
+        <h2>9. Funzione RICORSIVA</h2>
+        <div class="section-box">
+            <ul>
+                <li>La funzione <strong>Ricorsiva</strong> serve per eseguire l'organizzazione su cartelle esistenti comprendendo anche le <strong>Sottocartelle</strong> o se si decide di <strong>cambiare</strong> il metodo di organizzazione, in questo caso apparirà una finestra di richiesta conferma all'utente, si prega di effettuare eventuali backup di sicurezza su file/cartelle importanti prima di eseguire questa azione, il programma potrebbe aver bisogno di "tempo" per esguire le operazioni su "grandissime" quantità di file o su computer poco potenti, interazioni errate, blackout, etc.. potrebbero causare perdite di dati <strong>SENZA</strong> possibilità di ripristino, <strong>TUTTI</strong> i file eliminati da questa funzione saranno nel <strong>"cestino di sistema"</strong> per offrire un ulteriore sistema di sicurezza. </li>
+            </ul>
+        </div>
+
+        <div class="footer">
+            <p><strong>Grazie per aver scelto SKorganizer Pro!</strong></p>
+            <p><strong>Sviluppato da M.V.SoundSystem. Copyright © 2025.</strong></p>
+            <p><strong>mvsoundsystem81@gmail.com</strong></p>
+            <p><strong>canale YouTube: <a href="https://www.youtube.com/@M.V.SoundSystem" target="_blank">M.V.SoundSystem</strong></a></p>
+        </div>
+    </div>
+</body>
+</html>
