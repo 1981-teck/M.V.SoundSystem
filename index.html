@@ -57,15 +57,25 @@
         }
         nav ul li {
             margin: 0 15px;
+            /* Rimuoviamo il padding e il cursor qui per applicarli al link */
+            /* padding: 10px 15px; */ 
+            /* cursor: default; */
+            border-radius: 5px;
+        }
+        
+        /* Stili per i link nel menu di navigazione */
+        nav ul li a {
             color: #ffffff; /* Default text color */
             font-weight: bold;
             font-size: 1.1em;
-            padding: 10px 15px; /* Padding for the clickable/interactive area */
+            text-decoration: none; /* Rimuove la sottolineatura predefinita */
+            padding: 10px 15px; /* Applica il padding direttamente al link */
+            display: block; /* Rende l'intera area del li cliccabile */
             transition: color 0.3s ease, text-shadow 0.3s ease; /* Transition only for color and text shadow */
-            border-radius: 5px;
-            cursor: default; /* To indicate it's not clickable (optional) */
+            cursor: pointer; /* Indica che è cliccabile */
         }
-        nav ul li:hover {
+
+        nav ul li a:hover {
             color: #ffeb3b; /* Vibrant yellow on hover */
             text-shadow: 0 0 10px #ffeb3b;
         }
@@ -143,11 +153,11 @@
             <h1>Welcome to SKorganizer Pro!</h1>
             <nav>
                 <ul>
-                    <li>Home</li>
-                    <li>Features Details</li>
-                    <li>User Guide</li>
-                    <li>Default Categories</li>
-                    <li>End-User License Agreement (EULA)</li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Details on Features.html">Features Details</a></li>
+                    <li><a href="Instructions.html">User Guide</a></li>
+                    <li><a href="Default Categories.html">Default Categories</a></li>
+                    <li><a href="EULA EN.html">End-User License Agreement (EULA)</a></li>
                 </ul>
             </nav>
         </header>
