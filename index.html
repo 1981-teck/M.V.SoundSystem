@@ -1,34 +1,34 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SKorganizer Pro - Pagina Principale</title>
+    <title>SKorganizer Pro - Homepage</title>
     <style>
-        /* Stili Generali e Reset */
+        /* General Styles and Reset */
         body {
             font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
             line-height: 1.6;
             margin: 0;
             padding: 0;
-            background: linear-gradient(135deg, #2c3e50 0%, #1a242f 100%); /* Sfondo scuro e metallico */
-            color: #ecf0f1; /* Testo chiaro per contrasto */
+            background: linear-gradient(135deg, #2c3e50 0%, #1a242f 100%); /* Dark metallic background */
+            color: #ecf0f1; /* Light text for contrast */
         }
         .container {
             max-width: 1000px;
             margin: 40px auto;
-            background: rgba(44, 62, 80, 0.9); /* Contenitore leggermente trasparente */
+            background: rgba(44, 62, 80, 0.9); /* Slightly transparent container */
             padding: 30px 40px;
             border-radius: 12px;
-            box-shadow: 0 8px 30px rgba(0,0,0,0.4), inset 0 0 15px rgba(255,255,255,0.05); /* Ombre e bagliore interno */
+            box-shadow: 0 8px 30px rgba(0,0,0,0.4), inset 0 0 15px rgba(255,255,255,0.05); /* Shadows and inner glow */
             border: 1px solid rgba(255,255,255,0.1);
         }
         
-        /* Header e Titolo */
+        /* Header and Title */
         header {
-            background: linear-gradient(45deg, #3498db, #2980b9); /* Blu vibrante */
+            background: linear-gradient(45deg, #3498db, #2980b9); /* Vibrant blue */
             padding: 25px 0;
-            margin: -30px -40px 30px -40px; /* Estende l'header ai bordi del container */
+            margin: -30px -40px 30px -40px; /* Extends header to container edges */
             border-top-left-radius: 10px;
             border-top-right-radius: 10px;
             box-shadow: 0 4px 15px rgba(0,0,0,0.3);
@@ -39,11 +39,11 @@
             font-size: 2.8em;
             margin: 0;
             text-shadow: 2px 2px 5px rgba(0,0,0,0.5), 
-                         0 0 15px rgba(255,255,255,0.8); /* Effetto bagliore/metallico sul testo */
+                         0 0 15px rgba(255,255,255,0.8); /* Glow/metallic text effect */
             letter-spacing: 1.5px;
         }
 
-        /* Navigazione */
+        /* Navigation */
         nav {
             margin-top: 20px;
         }
@@ -51,37 +51,33 @@
             list-style: none;
             padding: 0;
             margin: 0;
-            display: flex; /* Elementi in linea */
+            display: flex; /* Inline elements */
             justify-content: center;
-            flex-wrap: wrap; /* Per schermi più piccoli */
+            flex-wrap: wrap; /* For smaller screens */
         }
         nav ul li {
             margin: 0 15px;
-            color: #ffffff; /* Colore testo default */
+            color: #ffffff; /* Default text color */
             font-weight: bold;
             font-size: 1.1em;
-            padding: 10px 15px; /* Padding per l'area cliccabile/interattiva */
-            transition: color 0.3s ease, text-shadow 0.3s ease; /* Transizione solo per colore e ombra testo */
+            padding: 10px 15px; /* Padding for the clickable/interactive area */
+            transition: color 0.3s ease, text-shadow 0.3s ease; /* Transition only for color and text shadow */
             border-radius: 5px;
-            cursor: default; /* Per indicare che non è cliccabile (opzionale) */
-            /* Rimosso position: relative, overflow: hidden e ::before per l'effetto lucido */
-            /* Rimosso transform per l'effetto di movimento */
+            cursor: default; /* To indicate it's not clickable (optional) */
         }
-        /* Rimosso nav ul li::before e nav ul li:hover::before */
         nav ul li:hover {
-            color: #ffeb3b; /* Giallo vibrante al passaggio del mouse */
+            color: #ffeb3b; /* Vibrant yellow on hover */
             text-shadow: 0 0 10px #ffeb3b;
-            /* Rimosso transform: translateY(-2px); */
         }
         
-        /* Contenuto Principale */
+        /* Main Content */
         main {
             padding: 20px 0;
         }
         main p {
             font-size: 1.1em;
             margin-bottom: 15px;
-            color: #bdc3c7; /* Grigio chiaro per il testo */
+            color: #bdc3c7; /* Light gray for text */
         }
         main ul {
             list-style: none;
@@ -89,7 +85,7 @@
             margin-top: 20px;
         }
         main ul li {
-            background-color: #34495e; /* Sfondo leggermente più scuro per le voci di lista */
+            background-color: #34495e; /* Slightly darker background for list items */
             margin-bottom: 10px;
             padding: 12px 20px;
             border-radius: 8px;
@@ -98,14 +94,14 @@
         }
         main ul li:hover {
             transform: translateY(-3px);
-            background-color: #405973; /* Sfondo un po' più chiaro al passaggio */
+            background-color: #405973; /* Slightly lighter background on hover */
         }
         main ul li a {
-            color: #2ecc71; /* Verde vibrante per i link nel contenuto */
+            color: #2ecc71; /* Vibrant green for links in content */
             text-decoration: none;
             font-weight: bold;
             font-size: 1.1em;
-            display: block; /* Rende cliccabile l'intera area del list item */
+            display: block; /* Makes the entire list item area clickable */
         }
         main ul li a:hover {
             color: #27ae60;
@@ -119,10 +115,10 @@
             padding-top: 20px;
             border-top: 1px solid rgba(255,255,255,0.1);
             font-size: 0.9em;
-            color: #7f8c8d; /* Grigio scuro per il copyright */
+            color: #7f8c8d; /* Dark gray for copyright */
         }
 
-        /* Media Queries per la Responsività */
+        /* Media Queries for Responsiveness */
         @media (max-width: 768px) {
             .container {
                 margin: 20px auto;
@@ -144,31 +140,31 @@
 <body>
     <div class="container">
         <header>
-            <h1>Benvenuto in SKorganizer Pro!</h1>
+            <h1>Welcome to SKorganizer Pro!</h1>
             <nav>
                 <ul>
                     <li>Home</li>
-                    <li>Dettagli Funzionalità</li>
-                    <li>Guida Utente</li>
-                    <li>Categorie Predefinite</li>
-                    <li>Licenza d'Uso (EULA)</li>
+                    <li>Features Details</li>
+                    <li>User Guide</li>
+                    <li>Default Categories</li>
+                    <li>End-User License Agreement (EULA)</li>
                 </ul>
             </nav>
         </header>
 
         <main>
-            <p>SKorganizer Pro è la tua soluzione definitiva per un computer sempre organizzato. Dimentica il disordine e lascia che l'applicazione automatizzi la classificazione e lo spostamento dei tuoi file, liberando spazio e migliorando la tua produttività.</p>
-            <p>Esplora le sezioni sottostanti per scoprire tutte le caratteristiche e come iniziare a usare SKorganizer Pro:</p>
+            <p>SKorganizer Pro is your definitive solution for an always organized computer. Forget clutter and let the application automate the classification and movement of your files, freeing up space and improving your productivity.</p>
+            <p>Explore the sections below to discover all the features and how to start using SKorganizer Pro:</p>
             <ul>
-                <li><a href="Details on Features.html">Scopri le Funzionalità Principali di SKorganizer Pro</a></li>
-                <li><a href="Instructions.html">Leggi la Guida Utente Dettagliata per iniziare</a></li>
-                <li><a href="Default Categories.html">Visualizza l'elenco delle Categorie Predefinite</a></li>
-                <li><a href="EULA EN.html">Consulta l'Accordo di Licenza per l'Utente Finale (EULA)</a></li>
+                <li><a href="Details on Features.html">Discover SKorganizer Pro's Main Features</a></li>
+                <li><a href="Instructions.html">Read the Detailed User Guide to get started</a></li>
+                <li><a href="Default Categories.html">View the list of Default Categories</a></li>
+                <li><a href="EULA EN.html">Consult the End-User License Agreement (EULA)</a></li>
             </ul>
         </main>
 
         <footer>
-            <p>&copy; 2025 SKorganizer Pro. Tutti i diritti riservati. Sviluppato da M.V.SoundSystem.</p>
+            <p>&copy; 2025 SKorganizer Pro. All rights reserved. Developed by M.V.SoundSystem.</p>
         </footer>
     </div>
 </body>
