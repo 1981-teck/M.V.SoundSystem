@@ -3,24 +3,189 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Il Mio Primo Sito</title>
-    <link rel="stylesheet" href="style.css"> </head>
+    <title>SKorganizer Pro - Pagina Principale</title>
+    <link rel="stylesheet" href="style.css"> 
+    <style>
+        /* Stili Generali e Reset */
+        body {
+            font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #2c3e50 0%, #1a242f 100%); /* Sfondo scuro e metallico */
+            color: #ecf0f1; /* Testo chiaro per contrasto */
+        }
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            background: rgba(44, 62, 80, 0.9); /* Contenitore leggermente trasparente */
+            padding: 30px 40px;
+            border-radius: 12px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.4), inset 0 0 15px rgba(255,255,255,0.05); /* Ombre e bagliore interno */
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        
+        /* Header e Titolo */
+        header {
+            background: linear-gradient(45deg, #3498db, #2980b9); /* Blu vibrante */
+            padding: 25px 0;
+            margin: -30px -40px 30px -40px; /* Estende l'header ai bordi del container */
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            text-align: center;
+        }
+        h1 {
+            color: #ffffff;
+            font-size: 2.8em;
+            margin: 0;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.5), 
+                         0 0 15px rgba(255,255,255,0.8); /* Effetto bagliore/metallico sul testo */
+            letter-spacing: 1.5px;
+        }
+
+        /* Navigazione */
+        nav {
+            margin-top: 20px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex; /* Elementi in linea */
+            justify-content: center;
+            flex-wrap: wrap; /* Per schermi più piccoli */
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1em;
+            padding: 10px 15px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden; /* Per l'effetto lucido */
+            border-radius: 5px;
+        }
+        nav ul li a::before { /* Effetto lucido per i link */
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.2);
+            transition: all 0.4s ease-in-out;
+            transform: skewX(-20deg);
+        }
+        nav ul li a:hover::before {
+            left: 100%;
+        }
+        nav ul li a:hover {
+            color: #ffeb3b; /* Giallo vibrante al passaggio del mouse */
+            text-shadow: 0 0 10px #ffeb3b;
+            transform: translateY(-2px);
+        }
+        
+        /* Contenuto Principale */
+        main {
+            padding: 20px 0;
+        }
+        main p {
+            font-size: 1.1em;
+            margin-bottom: 15px;
+            color: #bdc3c7; /* Grigio chiaro per il testo */
+        }
+        main ul {
+            list-style: none;
+            padding: 0;
+            margin-top: 20px;
+        }
+        main ul li {
+            background-color: #34495e; /* Sfondo leggermente più scuro per le voci di lista */
+            margin-bottom: 10px;
+            padding: 12px 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+            transition: transform 0.2s ease, background-color 0.2s ease;
+        }
+        main ul li:hover {
+            transform: translateY(-3px);
+            background-color: #405973; /* Sfondo un po' più chiaro al passaggio */
+        }
+        main ul li a {
+            color: #2ecc71; /* Verde vibrante per i link nel contenuto */
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1em;
+            display: block; /* Rende cliccabile l'intera area del list item */
+        }
+        main ul li a:hover {
+            color: #27ae60;
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            font-size: 0.9em;
+            color: #7f8c8d; /* Grigio scuro per il copyright */
+        }
+
+        /* Media Queries per la Responsività */
+        @media (max-width: 768px) {
+            .container {
+                margin: 20px auto;
+                padding: 20px 25px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            nav ul li {
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
 <body>
-    <header>
-        <h1>Benvenuto nel Mio Sito!</h1>
-    </header>
+    <div class="container">
+        <header>
+            <h1>Benvenuto in SKorganizer Pro!</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Details on Features.html">Dettagli Funzionalità</a></li>
+                    <li><a href="Instructions.html">Guida Utente</a></li>
+                    <li><a href="Default Categories.html">Categorie Predefinite</a></li>
+                    <li><a href="EULA EN.html">Licenza d'Uso (EULA)</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <main>
-        <p>Questa è la mia prima pagina web.</p>
-        <p>Puoi modificare questo testo per aggiungere i tuoi contenuti.</p>
-        <ul>
-            <li><a href="pagina1.html">Link a Pagina 1</a></li>
-            <li><a href="pagina2.html">Link a Pagina 2</a></li>
-        </ul>
-    </main>
+        <main>
+            <p>SKorganizer Pro è la tua soluzione definitiva per un computer sempre organizzato. Dimentica il disordine e lascia che l'applicazione automatizzi la classificazione e lo spostamento dei tuoi file, liberando spazio e migliorando la tua produttività.</p>
+            <p>Esplora le sezioni sottostanti per scoprire tutte le caratteristiche e come iniziare a usare SKorganizer Pro:</p>
+            <ul>
+                <li><a href="Details on Features.html">Scopri le Funzionalità Principali di SKorganizer Pro</a></li>
+                <li><a href="Instructions.html">Leggi la Guida Utente Dettagliata per iniziare</a></li>
+                <li><a href="Default Categories.html">Visualizza l'elenco delle Categorie Predefinite</a></li>
+                <li><a href="EULA EN.html">Consulta l'Accordo di Licenza per l'Utente Finale (EULA)</a></li>
+            </ul>
+        </main>
 
-    <footer>
-        <p>&copy; 2025 Il Mio Sito. Tutti i diritti riservati.</p>
-    </footer>
+        <footer>
+            <p>&copy; 2025 SKorganizer Pro. Tutti i diritti riservati. Sviluppato da M.V.SoundSystem.</p>
+        </footer>
+    </div>
 </body>
 </html>
