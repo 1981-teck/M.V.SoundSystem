@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SKorganizer Pro - Pagina Principale</title>
-    <link rel="stylesheet" href="style.css"> 
     <style>
         /* Stili Generali e Reset */
         body {
@@ -58,36 +57,21 @@
         }
         nav ul li {
             margin: 0 15px;
-        }
-        nav ul li a {
-            color: #ffffff;
-            text-decoration: none;
+            color: #ffffff; /* Colore testo default */
             font-weight: bold;
             font-size: 1.1em;
-            padding: 10px 15px;
-            transition: all 0.3s ease;
-            position: relative;
-            overflow: hidden; /* Per l'effetto lucido */
+            padding: 10px 15px; /* Padding per l'area cliccabile/interattiva */
+            transition: color 0.3s ease, text-shadow 0.3s ease; /* Transizione solo per colore e ombra testo */
             border-radius: 5px;
+            cursor: default; /* Per indicare che non è cliccabile (opzionale) */
+            /* Rimosso position: relative, overflow: hidden e ::before per l'effetto lucido */
+            /* Rimosso transform per l'effetto di movimento */
         }
-        nav ul li a::before { /* Effetto lucido per i link */
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: rgba(255, 255, 255, 0.2);
-            transition: all 0.4s ease-in-out;
-            transform: skewX(-20deg);
-        }
-        nav ul li a:hover::before {
-            left: 100%;
-        }
-        nav ul li a:hover {
+        /* Rimosso nav ul li::before e nav ul li:hover::before */
+        nav ul li:hover {
             color: #ffeb3b; /* Giallo vibrante al passaggio del mouse */
             text-shadow: 0 0 10px #ffeb3b;
-            transform: translateY(-2px);
+            /* Rimosso transform: translateY(-2px); */
         }
         
         /* Contenuto Principale */
@@ -163,11 +147,11 @@
             <h1>Benvenuto in SKorganizer Pro!</h1>
             <nav>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="Details on Features.html">Dettagli Funzionalità</a></li>
-                    <li><a href="Instructions.html">Guida Utente</a></li>
-                    <li><a href="Default Categories.html">Categorie Predefinite</a></li>
-                    <li><a href="EULA EN.html">Licenza d'Uso (EULA)</a></li>
+                    <li>Home</li>
+                    <li>Dettagli Funzionalità</li>
+                    <li>Guida Utente</li>
+                    <li>Categorie Predefinite</li>
+                    <li>Licenza d'Uso (EULA)</li>
                 </ul>
             </nav>
         </header>
